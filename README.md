@@ -11,7 +11,7 @@ This project aims to automate the process of exporting Power BI reports to PDF a
 ## Files in the Repository
 
 - **PBIconfig.json**: Configuration file containing all necessary credentials and parameters.
-- **script.py**: Main Python script to export Power BI reports to PDF.
+- **AutomatedReports.py**: Main Python script to export Power BI reports to PDF.
 - **PS_Start_Automation.ps1**: PowerShell script to schedule and run the Python script.
 - **SupportingScripts.ipynb**: Jupyter notebook with supporting scripts for additional tasks.
 
@@ -35,7 +35,6 @@ This project aims to automate the process of exporting Power BI reports to PDF a
         "password": "your-password",
         "workspace_id": "your-workspace-id",
         "report_id": "your-report-id",
-        "output_path": "DoctorReport.pdf",  // Relative file name
         "smtp_server": "smtp-server-address",
         "smtp_port": 587,
         "smtp_username": "your-smtp-username",
@@ -48,16 +47,16 @@ This project aims to automate the process of exporting Power BI reports to PDF a
 
 ### Running the Scripts
 
-1. **Python Script**: Run the `script.py` to export the report to PDF and send emails.
+1. **Python Script**: Run the `AutomatedReports.py` to export the report to PDF and send emails.
     ```bash
-    python script.py
+    python AutomatedReports.py
     ```
 
 2. **PowerShell Script**: Use `PS_Start_Automation.ps1` to schedule the Python script to run at specified intervals.
     ```powershell
     # PowerShell script to run Python script
     $pythonExecutable = "C:\path\to\python.exe"
-    $scriptPath = "C:\path\to\script.py"
+    $scriptPath = "C:\path\to\AutomatedReports.py"
     & $pythonExecutable $scriptPath
     ```
 

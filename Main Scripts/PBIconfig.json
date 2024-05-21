@@ -1,0 +1,16 @@
+{
+    "client_id": "...",
+    "client_secret": "...",
+    "tenant_id": "...",
+    "username": "...",
+    "password": "...",
+    "workspace_id": "...",
+    "report_id": "..." , 
+    "smtp_server": "...",
+    "smtp_port": 123 ,
+    "smtp_username": "...",
+    "smtp_password": "...",
+    "from_email": "...",
+    "to_email": ["user1@email.com", "user2@email.com", "user3@email.com"],  
+    "save_locally": false
+}
